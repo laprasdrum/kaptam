@@ -6,6 +6,6 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = arrayOf(AndroidModule::class))
-public interface KaptamComponent {
+interface KaptamComponent {
     fun inject(activity: MainActivity)
 }

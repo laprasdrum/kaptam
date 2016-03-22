@@ -10,7 +10,7 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-public class AndroidModule(private var application: Application) {
+class AndroidModule(private var application: Application) {
     @Provides @Singleton @ForApplication fun provideApplication(): Application {
         return application
     }
